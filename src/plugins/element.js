@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import { 
+
+import {
     Button,
     Breadcrumb,
     BreadcrumbItem,
@@ -19,7 +20,8 @@ import {
     Menu,
     Submenu,
     MenuItem,
-    Main
+    Main,
+    Col
 } from 'element-ui'
 
 
@@ -43,3 +45,9 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)
 Vue.use(Main)
+Vue.use(Col)
+
+
+
+
+

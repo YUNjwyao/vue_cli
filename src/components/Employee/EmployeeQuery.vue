@@ -174,7 +174,7 @@ export default {
         query: "",
         pagenum: 1,
         pagesize: 2
-      }
+      },
     };
   },
   methods: {
