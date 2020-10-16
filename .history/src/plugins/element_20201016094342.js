@@ -18,8 +18,7 @@ import {
     Aside,
     Menu,
     Submenu,
-    MenuItem,
-    Main
+    MenuItem
 } from 'element-ui'
 
 
@@ -36,10 +35,3 @@ Vue.use(TableColumn)
 Vue.use(Pagination)
 Vue.use(Form)
 Vue.use(FormItem)
-Vue.use(Container)
-Vue.use(Header)
-Vue.use(Aside)
-Vue.use(Menu)
-Vue.use(Submenu)
-Vue.use(MenuItem)
-Vue.use(Main)

@@ -27,13 +27,13 @@
         @selection-change="handleSelectionChange"
       >
         <el-table-column type="selection" width="55"> </el-table-column>
-        <el-table-column prop="name" label="标题" width="120">
+        <el-table-column prop="name" label="公告名称" width="120">
           <template slot-scope="scope">{{ scope.row.name }}</template>
         </el-table-column>
-        <el-table-column prop="sex" label="创建时间" width="120"> </el-table-column>
-        <el-table-column prop="phone" label="创建人" width="120">
+        <el-table-column prop="sex" label="公告内容" width="120"> </el-table-column>
+        <el-table-column prop="phone" label="创建时间" width="120">
         </el-table-column>
-        <el-table-column prop="sex" label="描述" width="120"> </el-table-column>
+        <el-table-column prop="sex" label="公告人" width="120"> </el-table-column>
         <el-table-column prop="email" label="操作" width="120">
         </el-table-column>
         <el-table-column prop="job" label="预览" width="120"> </el-table-column>
@@ -89,10 +89,10 @@ export default {
       ],
       tableData: [
         {
-          name: "文件哈",
-          sex: "2019年4月6日",
-          phone: "songyq",
-          email: "这是一个文件",
+          name: "参加会议通知",
+          sex: "今天技术部",
+          phone: "1522369825",
+          email: "1173131490@qq.com",
           job: "经理",
           education: "本科",
           IdNumber: "500213213123",

@@ -89,7 +89,7 @@
         :page-sizes="[1, 2, 5, 10]"
         :page-size="userInfo.pagesize"
         layout="total, sizes, prev, pager, next, jumper"
-        :total="3"
+        :total="total"
       >
       </el-pagination>
     </el-card>

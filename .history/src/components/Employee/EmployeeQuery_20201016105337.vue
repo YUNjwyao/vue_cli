@@ -89,7 +89,7 @@
         :page-sizes="[1, 2, 5, 10]"
         :page-size="userInfo.pagesize"
         layout="total, sizes, prev, pager, next, jumper"
-        :total="3"
+        :total="total"
       >
       </el-pagination>
     </el-card>
@@ -190,16 +190,7 @@ export default {
     handleSelectionChange(val) {
       this.multipleSelection = val;
     },
-    // 监听pagesize的变化
-    handleSizeChange(newSize) {
-      this.userInfo.pagesize = newSize;
-      this.getUserList();
-    },
-    // 监听页码值的变化
-    handleCurrentChange(newPage) {
-      this.userInfo.pagenum = newPage;
-      this.getUserList();
-    }
+    
   },
 };
 </script>

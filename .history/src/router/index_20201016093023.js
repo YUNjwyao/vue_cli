@@ -2,8 +2,6 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../components/Login.vue"
 import Face from "../components/Face/Face.vue"
-import Home from "../components/Home.vue"
-
 import EmployeeQuery from "../components/Employee/EmployeeQuery.vue";
 import ShowAddEmployee from "../components/Employee/ShowAddEmployee.vue";
 import ShowUpdateEmployee from "../components/Employee/ShowUpdateEmployee.vue";
@@ -21,10 +19,6 @@ const routes = [
   {
     path: '/login',component: Login
   },
-  { 
-    path: '/home',
-    component: Home,
-    children: [
   {
     path: '/face',component: Face
   },
@@ -63,8 +57,7 @@ const routes = [
   {
     path: "/addDocument",
     component: AddDocument,
-  }]
-  }
+  },
 ];
 
 const router = new VueRouter({

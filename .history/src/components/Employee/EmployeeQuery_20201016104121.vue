@@ -82,14 +82,14 @@
         <el-table-column label="操作" width="50"> </el-table-column>
       </el-table>
       <!-- 分页 -->
-       <el-pagination
+      <el-pagination
         @size-change="handleSizeChange"
         @current-change="handleCurrentChange"
-        :current-page="userInfo.pagenum"
-        :page-sizes="[1, 2, 5, 10]"
-        :page-size="userInfo.pagesize"
+        :current-page="currentPage4"
+        :page-sizes="[1, 2, 3, 4]"
+        :page-size="100"
         layout="total, sizes, prev, pager, next, jumper"
-        :total="3"
+        :total="400"
       >
       </el-pagination>
     </el-card>
@@ -169,12 +169,6 @@ export default {
         },
       ],
       multipleSelection: [],
-      // 默认用户信息
-      userInfo: {
-        query: "",
-        pagenum: 1,
-        pagesize: 2
-      }
     };
   },
   methods: {
@@ -190,16 +184,6 @@ export default {
     handleSelectionChange(val) {
       this.multipleSelection = val;
     },
-    // 监听pagesize的变化
-    handleSizeChange(newSize) {
-      this.userInfo.pagesize = newSize;
-      this.getUserList();
-    },
-    // 监听页码值的变化
-    handleCurrentChange(newPage) {
-      this.userInfo.pagenum = newPage;
-      this.getUserList();
-    }
   },
 };
 </script>
